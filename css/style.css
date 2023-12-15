@@ -1,0 +1,116 @@
+:root {
+  --clr-bg: #f0f8ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.space {
+  padding: 8rem 0 0 0;
+}
+.bg-nav {
+  background-color: var(--clr-bg);
+}
+.navbar-img {
+  height: 2.5rem;
+}
+.nav-link {
+  border-bottom: 0.1rem solid transparent;
+}
+.nav-link:hover {
+  border-bottom: 0.1rem solid var(--bs-primary);
+}
+
+#hero .container {
+  height: 100vh;
+}
+.dark-bg {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url('../images/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero-link {
+  width: 9rem;
+}
+
+/** Catalog Section  */
+
+section#catalog .overlay {
+  left: 0;
+  height: 100%;
+  transition: all 0.5s ease;
+  background-color: rgba(13, 110, 253, 0.15);
+}
+section#catalog .catalog-item:hover .overlay {
+  opacity: 0.8;
+  background-color: rgba(13, 110, 253, 0.8);
+}
+
+section#catalog .catalog-item img {
+  width: 100%;
+  min-height: 100%;
+}
+section#catalog .catalog-item button {
+  max-height: 25rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+section#catalog .catalog-item i {
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+section#catalog .catalog-item:hover i {
+  opacity: 1;
+  transform: translateY(3.5rem);
+}
+
+/** Card  */
+#product .card img {
+  transition: all 0.4s ease;
+}
+#product .card img:hover {
+  transform: scale(1.1);
+}
+
+/** Join  */
+#join .container {
+  min-height: 10rem;
+}
+.join-bg {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../images/team.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 6rem;
+}
+
+#join .form-control::placeholder {
+  color: var(--bs-gray-500);
+}
+
+/** Team  */
+.social-media i {
+  cursor: pointer;
+}
+
+/** footer  */
+
+@media (max-width: 576px) {
+  #footer .footer-input {
+    margin: 1rem 0;
+  }
+  #footer .footer-textarea {
+    margin-bottom: 1rem;
+  }
+  #testimonial .testimonial-gap {
+    margin-bottom: 2rem;
+  }
+}
